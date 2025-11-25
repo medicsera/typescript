@@ -11,6 +11,9 @@ cd typescript
 ```bash
 git checkout Introduction-to-TypeScript
 ```
+```bash
+yarn add node-ts
+```
 
 ## 2. Запуск заданий
 
