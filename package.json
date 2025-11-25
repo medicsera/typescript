@@ -8,5 +8,17 @@
   "devDependencies": {
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "buildjs" : "tsc",
+    "task1": "ts-node src/task_1.ts",
+    "task2": "ts-node src/task_2.ts",
+    "task3": "ts-node src/task_3.ts",
+    "task4": "ts-node src/task_4.ts",
+    "task5": "ts-node src/task_5.ts",
+    "task6": "ts-node src/task_6.ts",
+    "task7": "ts-node src/task_7.ts",
+    "task8": "ts-node src/task_8.ts",
+    "task9": "ts-node src/task_9.ts"
   }
 }

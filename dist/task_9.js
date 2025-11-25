@@ -31,7 +31,7 @@ try {
     frozenData.config.theme = "dark";
 }
 catch (e) {
-    console.log("Объект действительно заморожен!");
+    console.log("Объект заморожен!");
 }
 console.log(frozenData);
 //# sourceMappingURL=task_9.js.map
