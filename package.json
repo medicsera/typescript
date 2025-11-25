@@ -10,7 +10,7 @@
     "typescript": "^5.9.3"
   },
   "scripts": {
-    "buildjs" : "tsc",
+    "buildjs": "tsc",
     "task1": "ts-node src/task_1.ts",
     "task2": "ts-node src/task_2.ts",
     "task3": "ts-node src/task_3.ts",
@@ -20,5 +20,8 @@
     "task7": "ts-node src/task_7.ts",
     "task8": "ts-node src/task_8.ts",
     "task9": "ts-node src/task_9.ts"
+  },
+  "dependencies": {
+    "node-ts": "^8.0.9"
   }
 }
