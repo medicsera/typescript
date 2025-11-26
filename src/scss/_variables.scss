@@ -1,0 +1,40 @@
+$color-white: #fff;
+$color-black: #000;
+$color-bg: #f8f8f8;
+$color-bg-modal: #b08feab6;
+$color-light-purple: #dfc7ff;
+$color-purple: #9e78cf;
+$color-dark-purple: #1d1825;
+$color-red: #ff0000;
+$color-light-red: #fe37373e;
+$color-green: #00ff37;
+$color-light-green: #57c76f;
+$color-border: #3e1671;
+$color-black-theme: #15101c;
+$color-grey: #d3d3d3;
+
+$stat-font-size: 1.3em;
+
+$breakpoint-mobile-max: 767px;
+$breakpoint-tablet-min: 768px;
+$breakpoint-tablet-max: 1023px;
+$breakpoint-desktop-min: 1024px;
+
+:root {
+  --bg-color: #{$color-light-purple};
+  --color-item: #{$color-bg};
+  --color-btn-bg: #{$color-dark-purple};
+  --color-btn-img: #{$color-white};
+  --color-font: #{$color-black};
+  --color-switch: #{$color-bg-modal};
+  --color-switch-bg: #{$color-purple};
+}
+body.dark-theme {
+  --bg-color: #{$color-black-theme};
+  --color-item: #{$color-black-theme};
+  --color-btn-bg: #{$color-light-purple};
+  --color-btn-img: #{$color-black-theme};
+  --color-font: #{$color-light-purple};
+  --color-switch: #{$color-dark-purple};
+  --color-switch-bg: #{$color-purple};
+}

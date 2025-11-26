@@ -1,0 +1,29 @@
+@use "./variables" as *;
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == mobile {
+    @media screen and (max-width: $breakpoint-mobile-max) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media screen and (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media screen and (min-width: $breakpoint-desktop-min) {
+      @content;
+    }
+  }
+}
+
+@mixin flex-center($direction: row) {
+  display: flex;
+  justify-content: center;
+  flex-direction: $direction;
+}
+
+@mixin border {
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: $color-border;
+}
