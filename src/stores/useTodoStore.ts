@@ -3,7 +3,8 @@ import { defineStore } from "pinia";
 export interface Task {
     id: number,
     text: string,
-    completed: boolean
+    completed: boolean,
+    email: string
 }
 
 interface TodoState {
@@ -30,7 +31,7 @@ export const useTodoStore = defineStore('todo', {
             this.tasks = this.tasks.filter((t) => t.id !== id)
         },
 
-        toggleComplete(id: number): void {
+        toggleCompleted(id: number): void {
             const t = this.tasks.find((e) => e.id === id);
 
             if (t) t.completed = !t.completed;
