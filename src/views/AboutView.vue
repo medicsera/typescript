@@ -4,7 +4,7 @@
         <div class="dino" :style="{ bottom: dinoBottom + 'px' }">
             <img :src="frames[currentFrame]" style="width: 100%; height: 100%" />
         </div>
-        <template v-for="(ob, i) in obstacles" :key="ob.id">
+        <template v-for="ob in obstacles" :key="ob.id">
             <div class="obstacle" :style="{
                 left: ob.left + 'px',
                 bottom: ob.bottom + 'px',
@@ -36,7 +36,6 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from "vue";
-import { useRouter } from "vue-router";
 import cat1 from "../assets/cat1-no-bg.png";
 import cat2 from "../assets/cat2-no-bg.png";
 
@@ -73,7 +72,6 @@ const hasPlayed = ref<boolean>(false);
 const NUM_BLADES = 35;
 const dinoX = 50;
 const dinoWidth = 40;
-const dinoHeight = 40;
 const obstacleWidth = 20;
 const obstacleHeight = 40;
 const safeMargin = 5;
@@ -88,8 +86,6 @@ let fallInterval: number | null = null;
 let jumpTimeout: number | null = null;
 let runningInterval: number | null = null;
 let canSpawnNextPack = true;
-
-const router = useRouter();
 
 function clearIntervalSafe(id: number | null) {
     if (id !== null) window.clearInterval(id);
