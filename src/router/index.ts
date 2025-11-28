@@ -14,7 +14,7 @@ const routes: Array<RouteRecordRaw> = [
 ];
 
 const router = createRouter({
-  history: createWebHistory('/vue-v3'),
+  history: createWebHistory('/typescript'),
   routes
 });
 
